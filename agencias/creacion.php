@@ -11,7 +11,7 @@
 		die("Conexion fallida: ".$conexion->connect_error);
 	}
 
-	$sql = "CREATE DATABASE Agencia";
+	$sql = "CREATE DATABASE Proyecto_BDD_PHP";
 	if ($conexion -> query($sql) === true) {		
 	}
 	else{
@@ -33,7 +33,8 @@
 
 	if ($conexion -> query($sql)===true) {
 		
-	}else{die("Error en la creacion de la tabla: ".$conexion -> error);}
+	}else
+		{die("Error en la creacion de la tabla: ".$conexion -> error);}
 
 	$sql = "CREATE TABLE Anuncios(
 		codigo INT AUTO_INCREMENT PRIMARY KEY,
