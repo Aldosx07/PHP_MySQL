@@ -11,7 +11,7 @@
 		die("Conexion fallida: ".$conexion->connect_error);
 	}
 
-	$sql = "CREATE DATABASE PHP_MySQL";
+	$sql = "CREATE DATABASE PHP_with_MySQL";
 	if ($conexion -> query($sql) === true) {		
 	}
 	else{
