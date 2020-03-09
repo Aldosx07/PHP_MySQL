@@ -1,6 +1,6 @@
 <?php 
 
-	$conexion=mysqli_connect('localhost','root','','Agencia');
+	$conexion=mysqli_connect('localhost','root','','DB_PHP_MySQL');
 
  ?>
 

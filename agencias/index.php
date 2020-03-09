@@ -10,9 +10,7 @@
 <h1>Agencia de Publicidad</h1>
 
 <form method="POST" action="creacion.php" class="formularios">
-	
-	<button type="submit" class="boton">CrearDB y Tablas</button>
-
+	<button type="submit" class="boton">Crear Base y Tablas</button>
 </form>
 
 <form method="POST" action="ingresoC.php" class="formularios">

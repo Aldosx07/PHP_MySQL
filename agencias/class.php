@@ -8,7 +8,7 @@ class insertarC{
 		$servidor="localhost";
 		$nombreusuario ="root";
 		$password="";
-		$db="Agencia";
+		$db="DB_PHP_MySQL";
 
 		$conexion = new mysqli($servidor,$nombreusuario,$password,$db);
 		$sql = "INSERT INTO Clientes VALUES(null,'$nom','$dir','$tel','$nac','$age','$email');";
@@ -30,7 +30,7 @@ class insertarA{
 		$servidor="localhost";
 		$nombreusuario ="root";
 		$password="";
-		$db="Agencia";
+		$db="DB_PHP_MySQL";
 
 		$conexion = new mysqli($servidor,$nombreusuario,$password,$db);
 		$sql = "INSERT INTO Anuncios VALUES(null,'$nom','$tit','$cont','$price','$codC');";
@@ -52,7 +52,7 @@ class actualizarC{
 		$servidor="localhost";
 		$nombreusuario ="root";
 		$password="";
-		$db="Agencia";
+		$db="DB_PHP_MySQL";
 
 		$conexion = new mysqli($servidor,$nombreusuario,$password,$db);
 		$sql = "UPDATE Clientes SET nombre = '$nom',direccion='$dir',telefono='$tel', fecha_nac='$nac', edad='$age',email='$email' WHERE codigo='$cod'";
@@ -72,7 +72,7 @@ class actualizarA{
 		$servidor="localhost";
 		$nombreusuario ="root";
 		$password="";
-		$db="Agencia";
+		$db="DB_PHP_MySQL";
 
 		$conexion = new mysqli($servidor,$nombreusuario,$password,$db);
 		$sql = "UPDATE Anuncios SET nombre = '$nom',titulo='$tit',contenido='$cont', precio='$price', codigoC='$codC' WHERE codigo='$codA'";
@@ -98,7 +98,7 @@ class eliminarC
 		$servidor="localhost";
 		$nombreusuario ="root";
 		$password="";
-		$db="Agencia";
+		$db="DB_PHP_MySQL";
 
 		$conexion = new mysqli($servidor,$nombreusuario,$password,$db);
 		$sql = "DELETE FROM Clientes WHERE codigo='$codC'";
@@ -121,7 +121,7 @@ class eliminarA
 		$servidor="localhost";
 		$nombreusuario ="root";
 		$password="";
-		$db="Agencia";
+		$db="DB_PHP_MySQL";
 
 		$conexion = new mysqli($servidor,$nombreusuario,$password,$db);
 		$sql = "DELETE FROM Anuncios WHERE codigo='$codA'";

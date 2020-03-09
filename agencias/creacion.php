@@ -3,7 +3,7 @@
 	$servidor="localhost";
 	$nombreusuario ="root";
 	$password="";
-	$db="Agencia";
+	$db="DB_PHP_MySQL";
 
 	$conexion = new mysqli($servidor,$nombreusuario,$password);
 
@@ -11,7 +11,7 @@
 		die("Conexion fallida: ".$conexion->connect_error);
 	}
 
-	$sql = "CREATE DATABASE PHP_with_MySQL";
+	$sql = "CREATE DATABASE DB_PHP_MySQL";
 	if ($conexion -> query($sql) === true) {		
 	}
 	else{
